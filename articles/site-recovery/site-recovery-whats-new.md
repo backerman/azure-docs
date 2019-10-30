@@ -18,8 +18,8 @@ You can follow and subscribe to Site Recovery update notifications in the [Azure
 
 For disaster recovery of Azure VMs to a secondary region, or on-premises VMware VMs or physical servers to Azure, note the following:
 
-- From version 9.30.x.x of the Mobility service extension (for Azure VMs), and Mobility service agent (for VMware/physical machines), some machine operating systems must be running the servicing stack update and SHA-2. Details are shown in the table below.
-- Install the update and SHA-2 in accordance with the linked KB.
+- From version 9.30.x.x (expected release beginning November 2019) of the Mobility service extension (for Azure VMs), and Mobility service agent (for VMware/physical machines), some machine operating systems must be running the servicing stack update and SHA-2. Details are shown in the table below.
+- Install the update and SHA-2 in accordance with the linked KB. SHA-1 isn't supported from September 2019, and if SHA-2 code signing isn't enabled the agent extension won't install/upgrade as expected.
 - Learn more about [SHA-2 upgrade and requirements](https://aka.ms/SHA-2KB).
 
 **Operating system** | **Azure VM** | **VMware VM/physical machine**
@@ -35,7 +35,7 @@ For Site Recovery components, we support N-4 versions, where N is the latest rel
 
 **Update** |  **Unified Setup** | **Configuration server ova** | **Mobility service agent** | **Site Recovery Provider** | **Recovery Services agent**
 --- | --- | --- | --- | --- | ---
-[Rollup 40](https://support.microsoft.com/help/4517283/) | 9.28.5345.1 | 5.1.4800.0 | 9.28.5345.1 | 5.1.4800.0 | 2.0.9165.0
+[Rollup 40](https://support.microsoft.com/help/4521530/) | 9.28.5345.1 | 5.1.4800.0 | 9.28.5345.1 | 5.1.4800.0 | 2.0.9165.0
 [Rollup 39](https://support.microsoft.com/help/4517283/) | 9.27.5308.1 | 5.1.4600.0 | 9.27.5308.1 | 5.1.4600.0 | 2.0.9165.0
 [Rollup 38](https://support.microsoft.com/help/4513507/) | 9.26.5269.1 | 5.1.4500.0 | 9.26.5269.1 | 5.1.4500.0 | 2.0.9165.0
 [Rollup 37](https://support.microsoft.com/help/4508614/) | 9.25.5241.1 | 5.1.4300.0 | 9.25.5241.1 | 5.1.4300.0 | 2.0.9163.0
@@ -49,7 +49,7 @@ For Site Recovery components, we support N-4 versions, where N is the latest rel
 
 ### Update rollup 40
 
-[Update rollup 40](hhttps://support.microsoft.com/help/4521530/update-rollup-40-for-azure-site-recovery) provides the following updates.
+[Update rollup 40](https://support.microsoft.com/help/4521530/update-rollup-40-for-azure-site-recovery) provides the following updates.
 
 **Update** | **Details**
 --- | ---
@@ -65,7 +65,7 @@ New features for Azure VM disaster recovery are summarized in the table.
 
 **Feature** | **Details**
 --- | ---
-**Cleanup after failback** | After failing over to the secondary Azure, and then failing back to the primary region, Site Recovery automatically cleans up machines in the secondary region. There's no need to manually delete VMS and NICs.
+**Cleanup after failback** | After failing over to the secondary Azure, and then failing back to the primary region, Site Recovery automatically cleans up machines in the secondary region. There's no need to manually delete VMs and NICs.
 **Test failover retains IP address** | You can now retain the IP address of the source VM during a disaster recovery drill, and pick a static IP address for a test failover.
 
 ### VMware/physical server disaster recovery

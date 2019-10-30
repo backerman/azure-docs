@@ -136,7 +136,9 @@
       - name: Autoscale clusters
         href: ./hdinsight-autoscale-clusters.md
       - name: Use external metadata stores
-        href: ./hdinsight-use-external-metadata-stores.md     
+        href: ./hdinsight-use-external-metadata-stores.md
+      - name: Custom Ambari DB
+        href: ./hdinsight-custom-ambari-db.md          
       - name: Manage logs for an HDInsight cluster
         href: ./hdinsight-log-management.md
       - name: Add storage accounts
@@ -595,6 +597,8 @@
         href: ./hbase/apache-hbase-rest-sdk.md
       - name: Develop Java applications
         href: ./hbase/apache-hbase-build-java-maven-linux.md
+      - name: Apache Phoenix with Apache Zeppelin
+        href: ./hbase/apache-hbase-phoenix-zeppelin.md
       - name: Apache Phoenix in HDInsight
         href: ./hdinsight-phoenix-in-hdinsight.md
       - name: Use the Apache Phoenix Query Server REST SDK
